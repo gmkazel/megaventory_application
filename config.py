@@ -3,3 +3,4 @@ SUPPLIER_CLIENT_UPDATE_URL = 'https://api.megaventory.com/v2017a/SupplierClient/
 INVENTORY_LOCATION_UPDATE_URL = 'https://api.megaventory.com/v2017a/InventoryLocation/InventoryLocationUpdate'
 TAX_UPDATE_URL = 'https://api.megaventory.com/v2017a/Tax/TaxUpdate'
 DISCOUNT_UPDATE_URL = 'https://api.megaventory.com/v2017a/Discount/DiscountUpdate'
+SALES_ORDER_UPDATE_URL = 'https://api.megaventory.com/v2017a/SalesOrder/SalesOrderUpdate'
