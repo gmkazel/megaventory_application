@@ -1,1 +1,12 @@
-# simple_web_application
+# Megaventory Application
+
+In this project, I developed a simple web application that integrates with some of the Megaventory entities using the Megaventory API. At first, I read carefully the project's requirements, and in order to meet them, I took a close look into the API's documentation and its available methods. 
+
+The structure of the project mainly consists of a folder named "entities" and a `main.py` file. In the folder, I have implemented in seperate files the classes of each of the megaventory entities that I had to work with. I thought that the code would be much more readable and easy to understand if I had a separate file for each of the entities. In each file/class, I implemented a constructor for the creation of the dummy objects, as well as getters and setters functions and a post method, which was used for the insertion of the objects to my account. For this method, I used the `requests` library, with which I posted in the appropriate URL (endpoint) the desired data. In order to do that, the creation of an API key was needed, which I created in the megaventory.com website. I stored the API key in a `.env` file, which was ignored due to the `.gitignore` file, and as a result it was not uploaded to GitHub, for safety reasons. The URLs that were used to communicate with the Megaventory API were stored in the `config` file, to make the code easier to read. The `main.py` file is basically used for the creation of the dummy data and for the call of the post method of each of the classes, so as for the dummy data to be inserted to my account. Also, one could find an output in the terminal, which is produced by the call of a method that was implemented to calculate the total selling value of all the products in a SalesOrder object, after applying the Tax and the Discount.
+
+To run the project, one should install the required libraries, which are included in the `requirements.txt` file. To do that, run the following command:
+```
+pip install -r requirements.txt
+```
+
+This project is similar to a group academic project that I participated in, in the *Databases* course of the 6th Semester of my university curriculum, where we designed and implemented a web application for a Supermarket. Also, it has some similarities with another group academic project that I participated in, which was in the *Software Engineering* course of the 7th Semester of my university curriculum, where we designed and implemented a Mock Vehicle Charging Platform, more information on which can be also found in my CV and my GitHub account.
